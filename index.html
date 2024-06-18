@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generatore di Verbali della Polizia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>VERBAI</h1>
+    </header>
+    <main>
+        <form id="verbaleForm">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="cognome" name="cognome" required>
+            </div>
+            <div>
+                <label for="dataNascita">Data di Nascita:</label>
+                <input type="date" id="dataNascita" name="dataNascita" required>
+            </div>
+            <div>
+                <label for="indirizzo">Indirizzo:</label>
+                <input type="text" id="indirizzo" name="indirizzo" required>
+            </div>
+            <div>
+                <label for="infrazione">Tipo di Infrazione:</label>
+                <input type="text" id="infrazione" name="infrazione" required>
+            </div>
+            <div>
+                <label for="dataInfrazione">Data dell'Infrazione:</label>
+                <input type="date" id="dataInfrazione" name="dataInfrazione" required>
+            </div>
+            <div>
+                <label for="oraInfrazione">Ora dell'Infrazione:</label>
+                <input type="time" id="oraInfrazione" name="oraInfrazione" required>
+            </div>
+            <div>
+                <label for="note">Note Aggiuntive:</label>
+                <textarea id="note" name="note"></textarea>
+            </div>
+            <div class="buttons">
+                <button type="submit">Genera Verbale</button>
+                <button onclick="logout()" class="btn-blue">Logout</button> <!-- Pulsante di logout -->
+                <a href="verbali.html" class="btn-blue">Visualizza tutti i verbali</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
